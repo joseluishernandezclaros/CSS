@@ -19,6 +19,171 @@ div h2, div h3 {
 }
 
 * {
-    font-size: 24px;
-    color: black; /*Solo afecta a los que NO tienen definidos un color*/
+    font-size: 24px; /*Tamaño de fuente*/
+    /* color: black; */ /*Solo afecta a los que NO tienen definidos un color*/
+}
+/*
+.color {
+    color: #ff0000;
+}
+.color {
+    color: rgb(0, 0, 255);
+}
+*/
+.color {
+    /* border: 5px black solid; */ 
+    /*
+        dotted
+        dashed
+        solid
+        double
+        groove
+        ridge
+        inset
+        outset
+        none
+        hidden
+    */
+    border-style: solid; /*Bordes*/
+    border-color: blue;
+    border-radius: 5px;
+    /* border-width: 2em; EM es relativo a tamaño de fuente elemento */
+    border-width: 2rem;
+}
+
+#fondo {
+    color: white;
+    background-color: rgba(255, 0, 0); /*Color De Fondo*/
+    /* opacity: 0.3; */
+    background-image: url('imagenes/noche.jpg');
+    height: 400px;
+    /*background-repeat: repeat-x;
+    background-repeat: repeat-y;*/
+    background-repeat: repeat-y;
+    background-position: center bottom;
+    background: #f00 url("imagenes/noche.jpg") repeat-y bottom /100px 100px;
+    /* background-size: 100px 100px; */
+}
+
+.margen {
+    background-color: chocolate;
+    /* margin: 15px 20px 25px 30px; */ /*margen diferente*/
+    margin: 15px; /*margen igual*/
+    /* padding: 30px 25px 20px 15px; */ /*padding diferente*/
+    /* padding: 30px; */ /*padding igual*/
+    padding: 30px 15px;/*padding horizontal, vertical*/
+    border: solid 5px black;
+    border-radius: 50px;
+    height: 100px;
+    width: 50px;
+    overflow: scroll;
+    outline: 5px solid red;
+}
+
+.text {
+    font-family: 'Roboto Condensed', 'Times New Roman', Times, serif ;
+    text-align: center;
+    text-decoration: overline;
+    text-shadow: 3px 5px 5px blue;
+}
+
+a:link { /*Link no visitado*/
+    color: blueviolet;
+}
+
+a:visited { /*links ya visitados*/
+    color: gray;
+}
+
+a:hover{ /*Pasar el mouse por encima*/
+    color: yellow;
+}
+
+a:active{ /*Al pulsar un link*/
+    columns: red;
+}
+
+ul {
+    background-color: yellowgreen;
+    list-style-type: circle; /*Quitar los puntos de la lista no ordenada*/
+    padding-left: 40px; /*Quitar padding izquierdo*/
+    /* list-style-position: inside; */
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse; /*Quitar separacion de seldas*/
+}
+
+th, td {
+    border: solid 1px #eee;
+    padding: 5px;
+}
+
+th {
+    background-color: tomato;
+    color: white;
+    text-align: left;
+}
+
+tr:nth-child(even) { /*even = impares, odd = pares*/
+    background-color: #eee;
+}
+
+tr:hover {
+    background-color: #aaa;
+    cursor: pointer;
+}
+
+span {
+    display: block;  /*Crea un salto de linea en los span*/
+   /*  display: none; */ /*Desaparecer elementos de span*/
+    /* visibility: hidden; */ /*desaparecer elementos span*/
+    max-width: 300px; /*configurar ancho maximo*/
+    background-color: red;
+}
+
+.inline {
+    display: inline; /*inline evita que los div aparezcan en una nueva linea*/
+}
+
+#position {
+    position: static; /*Fixed poner sobre el texto, sticky similar a static*/
+    left: 20px;
+    /* top: 25px; */
+}
+
+.left {
+    float: left;
+    width: 200px;
+    height: 250px;
+}
+
+.right {
+    float: right;
+    width: 100px;
+}
+
+.container {
+    height: 250px;
+}
+
+.column {
+    border: solid 1px #ddd;
+    border-radius: 5px;
+    width: 33%;
+}
+
+.inline-block {
+    display: inline-block; /*inline no deja poner widht ni hight, toca usar inline-block*/
+    height: 55px;
+    background-color: red;
+}
+
+.center {
+    padding: 50px 0; /*alto 50 px ancho 0*/
+    text-align: center; /*centrar texto*/
+    width: 400px; 
+    margin: 0 auto; 
+    background-color: aqua;
 }
