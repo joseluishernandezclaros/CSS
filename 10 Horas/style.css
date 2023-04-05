@@ -1,0 +1,104 @@
+
+/*selector universal*/
+/* * { selector universal
+    color:red;
+} 
+ */ 
+
+/*h1 rojo*/
+ /* h1 {
+    color: red;
+ } */
+
+ /*seleccionar por clase*/
+ .titulo-h2{
+    color:Red;
+ }
+
+ /*seleccionar por elemento*/
+ #elemento, #elemento2{
+    color:darksalmon;
+ }
+
+ /*Seleccionar por atributos*/
+ [querayos="khe"]{
+    color:blue;
+ }
+
+ /*seleccionar los elementos p que estan adentro de h3*/
+ h3 p {
+    color: red;
+ }
+ 
+ /*seleccionar los elementos b que estan adentro de h3*/
+ h3 b {
+    color: red;
+ }
+
+ /* seleccionar los span de la clase h3-p*/
+ .h3-p span {
+    color: blue;
+ }
+
+ /*hoover activa los atributos al pasar el mouse por encima*/
+ h1:hover {
+    color: violet;
+ }
+
+
+ /*jerarquia, important, estilo en line <style="color:yellow">, id, clase, elemento*/
+ b {
+    color: red !important; /*el important le gana a todo*/
+ }
+
+ #color-red {
+    color: green;
+ }
+
+ .color-red {
+    color: blue;
+ }
+
+ b {
+    color: red;
+ }
+
+ /*cambiar primer coincidencia de la clase form__input*/
+ .form__input:first-child{
+    color:red;
+ }
+ 
+ /*Metodologia BEM se escribe -- luego un numero para escoger un elemento*/
+ .form__input--BEM{
+    color:blue;
+ }
+
+ /* * {
+    padding: 0px;
+    margin: 0px;
+ } */
+
+.contact-form{ 
+    padding: 1em; /*1em = 16px*/
+    font-size: 20px; /*cambia el valor del em por cambiar los px*/
+    background-color: black;
+    width: 100vw; /*(viewpor width) si vale 100 toma todo el ancho de la pantalla*/
+    /* height: 100vh; (viewpor height) si vale 100 toma todo el alto de la pantalla */
+
+}
+
+.contact-form__h2{ 
+    color: yellow;
+    font-size: 1em; /*pt son puntos   (1 em son 16px)*/
+    font-family: sans-serif;
+    /* line-height: 2; altura de la letra, si le ponemos 2 se vuelve el tamaño de 2 letras */
+    /* font-weight: 100; grosor, no cambia en todas las familyas de font */
+}
+
+.contact-form__p {
+    color: blanchedalmond
+}
+
+
+
+

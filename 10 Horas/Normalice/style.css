@@ -1,0 +1,75 @@
+* {
+    /* box-sizing: border-box; */
+    padding: 0;
+    margin: 0;
+}
+
+.form {
+    font-size: 25px;
+}
+
+.form__h1 {
+    font-size: 2em;
+    color: red;
+}
+
+.form__p {
+    margin: 10px;
+}
+
+/* .h2-p-b {
+    font-size: 30px;
+} */
+
+/* h2 {
+    display: inline; cambio de elemento en bloque a elemento en linea
+}
+
+b {
+    display: block; cambio de elemento de enlinea(inline) a en bloque
+} */
+
+h2 {
+    background-color: #a22;
+    display: inline-block;
+    /*se vuelve elemento en linea pero puede adquirir propiedades de elemento en bloque*/
+    /* padding-bottom: 20px; abajo */
+    /* padding-top: 20px; arriba */
+    /* padding-left: 30px; izquierda */
+    /* padding-right: 30px; derecha */
+    /*padding: 10px 20px 30px 40px;*/
+    /*En senrido horario*/
+    /* height: 200px;
+    width: 200px; */
+    padding: 50px;
+    box-sizing: border-box;
+    /*tamaño maximo definido por height y width se respeta no se le agrega mas cantidad*/
+    text-align: center;
+    margin: 20px 10px;
+    /*arriba/abajo y luego costados*/
+    border-radius: 20%;
+    border: 10px solid rgb(55, 22, 22);
+    /*tamaño del borde, tipo y color*/
+    box-shadow: 20px 10px 22px 10px #000;
+    /*(X,Y) - difuminado - borde sombra - color*/
+    /*sombra  a la caja se aplica fuera del borde*/
+    text-shadow: 5px 3px 7px #fff;
+    /*sombre al texto (X,Y) - difuminado - color*/
+    transform: rotate(-25deg);
+    /*Rotar box ciertos grados*/
+}
+
+
+.caja1 {
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    margin: auto;
+}
+
+.caja2 {
+    width: 200px;
+    height: 200px;
+    background-color: yellow;
+    margin: auto;
+}

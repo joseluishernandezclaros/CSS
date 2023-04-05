@@ -1,3 +1,8 @@
+
+body {
+    background-color: rgb(206, 244, 244);   
+}
+
 #titulo {
     color: tomato;
 }
@@ -17,6 +22,7 @@ div p {
 div h2, div h3 {
     color: brown;
 }
+
 
 * {
     font-size: 24px; /*Tamaño de fuente*/
@@ -45,46 +51,46 @@ div h2, div h3 {
         hidden
     */
     border-style: solid; /*Bordes*/
-    border-color: blue;
-    border-radius: 5px;
+    border-color: rgb(144, 144, 209);
+    border-radius: 5rem;
     /* border-width: 2em; EM es relativo a tamaño de fuente elemento */
-    border-width: 2rem;
+    border-width: 2rem; /*altura del borde*/
 }
 
 #fondo {
-    color: white;
-    background-color: rgba(255, 0, 0); /*Color De Fondo*/
+    color: rgb(250, 250, 250);
+    background-color: rgb(246, 246, 246); /*Color De Fondo*/
     /* opacity: 0.3; */
     background-image: url('imagenes/noche.jpg');
     height: 400px;
-    /*background-repeat: repeat-x;
-    background-repeat: repeat-y;*/
-    background-repeat: repeat-y;
+    /* background-repeat: repeat-x; */
+    /* background-repeat: repeat-y; */
+    /* background-repeat: repeat-y; */
     background-position: center bottom;
-    background: #f00 url("imagenes/noche.jpg") repeat-y bottom /100px 100px;
+    background: rgba(123, 119, 119, 0.401) url("imagenes/noche.jpg") repeat-y bottom /100px 100px;
     /* background-size: 100px 100px; */
 }
 
 .margen {
-    background-color: chocolate;
+    background-color: rgb(195, 131, 86);
     /* margin: 15px 20px 25px 30px; */ /*margen diferente*/
     margin: 15px; /*margen igual*/
     /* padding: 30px 25px 20px 15px; */ /*padding diferente*/
     /* padding: 30px; */ /*padding igual*/
     padding: 30px 15px;/*padding horizontal, vertical*/
     border: solid 5px black;
-    border-radius: 50px;
+    border-radius: 5px;
     height: 100px;
-    width: 50px;
+    width: 120px;
     overflow: scroll;
-    outline: 5px solid red;
+    outline: 5px solid rgb(21, 227, 69);
 }
 
 .text {
     font-family: 'Roboto Condensed', 'Times New Roman', Times, serif ;
     text-align: center;
-    text-decoration: overline;
-    text-shadow: 3px 5px 5px blue;
+    text-decoration: overline;  /*linea superior*/
+    text-shadow: 3px 5px 5px rgb(108, 108, 187);
 }
 
 a:link { /*Link no visitado*/
@@ -104,8 +110,8 @@ a:active{ /*Al pulsar un link*/
 }
 
 ul {
-    background-color: yellowgreen;
-    list-style-type: circle; /*Quitar los puntos de la lista no ordenada*/
+    background-color: rgb(179, 203, 133);
+    list-style-type: circle; /*Quitar los puntos de la lista no ordenada
     padding-left: 40px; /*Quitar padding izquierdo*/
     /* list-style-position: inside; */
 }
